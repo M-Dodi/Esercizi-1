@@ -52,10 +52,14 @@ def merge(list_1: list[int], list_2: list[int]) -> list[int]:
             i += 1  
     return result
 
-if __name__ == "__main__":
-    
-    input_list: list[int] = (0, 1, 2, 3, 4, 5, 6, 7)
+input_list: list[int] = (0, 1, 2, 3, 4, 5, 6, 7)
 
-    mergeSort(input_list)
+print(mergeSort(input_list))
+
+
+    
+
+
+   
 
 

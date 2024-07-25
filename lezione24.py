@@ -115,11 +115,22 @@ class File(Documento):
             print(f"File non trovato; {self.path_name}")   
 
 
+email = Email(mittente="alice@example.com", destinatario="bob@example.com",
+              titolo="Incontro", messaggio="Ciao Bob, possiamo incontrarci domani?")
 
+path = "/home/user/Vscodeproject/Esercizi-1/email.txt"
+file = File(email.text)
 
+print("Testo del email:")
+print(email.getText())
 
+print("\nContenuto del file:")
+print(file.getText())
 
+email.writeToFile("email.txt")
 
-
+print("\nVerifica parola chiave:")
+print(f"Parola 'Ciao' nell'email: {email.isInText('Ciao')}")
+print(f"Parola 'percorso' nel file:{file.isInText('percorso')}")
 
 
